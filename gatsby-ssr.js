@@ -5,3 +5,6 @@
  */
 
 // You can delete this file if you're not using it
+// redux wrapper
+//import "bootstrap"
+export { default as wrapRootElement } from "./src/redux/store"

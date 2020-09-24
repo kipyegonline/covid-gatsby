@@ -1,0 +1,295 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Table/> component UI layout matches snapshot 1`] = `
+<Table
+  add={[MockFunction]}
+  remove={[MockFunction]}
+  tableData={
+    Array [
+      Object {
+        "added": false,
+        "countryregion": "Kenya",
+        "flag": "kenya.jpeg",
+        "stats": Array [
+          Object {
+            "confirmed": 3647,
+            "deaths": 314,
+            "recovered": 12,
+          },
+        ],
+      },
+      Object {
+        "added": true,
+        "countryregion": "Tanzania",
+        "flag": "tanzania.jpeg",
+        "stats": Array [
+          Object {
+            "confirmed": 7648,
+            "deaths": 650,
+            "recovered": 234,
+          },
+        ],
+      },
+    ]
+  }
+>
+  <div
+    className="table-responsive"
+  >
+    <Pointer
+      classlist="float-left"
+      current={-1}
+      setValue={[Function]}
+      text="<<"
+    >
+      <span
+        className="float-left"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "grey",
+            "fontSize": "2rem",
+            "fontWeight": "bold",
+            "lineHeight": "1em",
+            "padding": "1rem",
+          }
+        }
+      >
+        &lt;&lt;
+      </span>
+    </Pointer>
+    <Pointer
+      classlist="float-right"
+      current={1}
+      setValue={[Function]}
+      text=">>"
+    >
+      <span
+        className="float-right"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "grey",
+            "fontSize": "2rem",
+            "fontWeight": "bold",
+            "lineHeight": "1em",
+            "padding": "1rem",
+          }
+        }
+      >
+        &gt;&gt;
+      </span>
+    </Pointer>
+    <p
+      className="text-center mt-4"
+    >
+      Page 
+      1
+       of 
+      1
+    </p>
+    <styled.table
+      classlist="table table-bordered table-hover"
+    >
+      <table
+        className="sc-AxjAm StDqN"
+      >
+        <thead>
+          <tr>
+            <th>
+              #
+            </th>
+            <th>
+              Country
+            </th>
+            <th>
+              Confirmed
+            </th>
+            <th>
+              Deaths
+            </th>
+            <th>
+              Visualize
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <TableContent
+            add={[MockFunction]}
+            data={
+              Object {
+                "added": false,
+                "countryregion": "Kenya",
+                "flag": "kenya.jpeg",
+                "stats": Array [
+                  Object {
+                    "confirmed": 3647,
+                    "deaths": 314,
+                    "recovered": 12,
+                  },
+                ],
+              }
+            }
+            index={0}
+            key="0"
+            remove={[MockFunction]}
+          >
+            <tr>
+              <td>
+                1
+                .
+              </td>
+              <td>
+                Kenya
+                 
+                <img
+                  alt="flag"
+                  height={10}
+                  src="kenya.jpeg"
+                  width={20}
+                />
+              </td>
+              <td
+                className="text-info"
+              >
+                0
+              </td>
+              <td
+                className="text-danger"
+              >
+                314
+              </td>
+              <td>
+                <styled.button
+                  classlist="blue btn btn-info btn-block  darken-2"
+                  onClick={[Function]}
+                >
+                  <button
+                    className="sc-AxirZ hnqJkY blue btn btn-info btn-block  darken-2"
+                    onClick={[Function]}
+                  >
+                    Add
+                     
+                  </button>
+                </styled.button>
+              </td>
+            </tr>
+          </TableContent>
+          <TableContent
+            add={[MockFunction]}
+            data={
+              Object {
+                "added": true,
+                "countryregion": "Tanzania",
+                "flag": "tanzania.jpeg",
+                "stats": Array [
+                  Object {
+                    "confirmed": 7648,
+                    "deaths": 650,
+                    "recovered": 234,
+                  },
+                ],
+              }
+            }
+            index={1}
+            key="1"
+            remove={[MockFunction]}
+          >
+            <tr>
+              <td>
+                2
+                .
+              </td>
+              <td>
+                Tanzania
+                 
+                <img
+                  alt="flag"
+                  height={10}
+                  src="tanzania.jpeg"
+                  width={20}
+                />
+              </td>
+              <td
+                className="text-info"
+              >
+                0
+              </td>
+              <td
+                className="text-danger"
+              >
+                650
+              </td>
+              <td>
+                <styled.button
+                  classlist=" btn btn-block white-text red darken-2"
+                  onClick={[Function]}
+                >
+                  <button
+                    className="sc-AxirZ hnqJkY  btn btn-block white-text red darken-2"
+                    onClick={[Function]}
+                  >
+                    Remove
+                  </button>
+                </styled.button>
+              </td>
+            </tr>
+          </TableContent>
+        </tbody>
+      </table>
+    </styled.table>
+    <Pointer
+      classlist="float-left"
+      current={-1}
+      setValue={[Function]}
+      text="<<"
+    >
+      <span
+        className="float-left"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "grey",
+            "fontSize": "2rem",
+            "fontWeight": "bold",
+            "lineHeight": "1em",
+            "padding": "1rem",
+          }
+        }
+      >
+        &lt;&lt;
+      </span>
+    </Pointer>
+    <Pointer
+      classlist="float-right"
+      current={1}
+      setValue={[Function]}
+      text=">>"
+    >
+      <span
+        className="float-right"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "grey",
+            "fontSize": "2rem",
+            "fontWeight": "bold",
+            "lineHeight": "1em",
+            "padding": "1rem",
+          }
+        }
+      >
+        &gt;&gt;
+      </span>
+    </Pointer>
+    <p
+      className="text-center my-4"
+    >
+      Page 
+      1
+       of 
+      1
+    </p>
+  </div>
+</Table>
+`;

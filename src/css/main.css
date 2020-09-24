@@ -1,0 +1,252 @@
+html{
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+body{
+    width:100%;
+    margin: auto;
+    background:#ccc;
+    padding:1rem;
+    line-height:1em;
+    font-size:1rem;
+    font-family: raleway,"helvetica neue";
+}
+
+/*grid line*/
+.grid path {
+    stroke-width: 0;
+    z-index: -100;
+  }
+  
+  .grid .tick line {
+    stroke: #9FAAAE;
+    stroke-opacity: 0.3;
+    z-index: -100;
+  }
+  /*tool tip*/
+  /*Covid graph*/
+#covid{
+    position: relative;
+}
+.covid-tip{
+    width:150px;
+    border-radius: 10px;
+    background:white;
+    padding: .5rem;
+    font-size:1rem;
+    margin:0;
+    position: absolute;
+    z-index: 100;
+    height:auto;
+    opacity:1;
+    transition: all .25s ease-in;
+    box-shadow:-2px -2px 3px #fff ,2px 2px 3px #fff;
+    pointer-events: none;
+
+
+}
+.covid-tip p{
+    margin:0;
+    padding:.35rem;
+    border-bottom: 1px solid #ddd;;
+    font-family:raleway;
+   
+}
+.tip-flag{
+    margin-left:2rem;
+    padding-left:.5rem;
+}
+#covid-tip p:first-child{text-align: center;}
+.load-message, .user-guide{
+    transition: all .2s ease-in-out;
+}
+#sort-cv{
+    opacity:0;
+}
+
+.bar-btn:active, .bar-btn:focus{
+    background:red;
+}
+/*suspense*/
+
+.suspense-p{
+    font-family:'raleway';
+    font-size:2rem;
+    opacity:1;
+    padding:1rem;
+    text-align: center;
+   
+}
+
+nav{
+   z-index: 10;
+   padding:.75rem;
+   height:50px;
+  
+
+}
+.navbar-nav{
+justify-content: center;
+align-items: center;
+align-content: space-between;
+
+}
+.nav-item{
+    height:50px;
+}
+.nav-link{
+font-size: 1.5rem;
+color:#fff !important;  
+margin:0 .75rem;
+line-height: 1em;
+
+height:50px;
+}
+.quickquide{
+   
+    transition: all .25s linear;
+}
+.jest-master{
+    display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: flex-start;
+}
+.jest-branch{
+
+margin:.5rem;
+max-width: 100px;
+}
+.jest-branch p{
+    font-family: raleway;
+    font-size:1rem;
+    text-align: center;
+    line-height: 1em;
+    font-weight:bold;
+    padding: .5rem;
+    margin:.5rem 0;
+}
+.jest-branch img{
+    width:100px;
+}
+.main-flags{
+    display:flex;  
+    flex-wrap: wrap;
+    position:relative;
+}
+.card-flag{
+    max-width:150px;
+}
+.flag-btns{
+    display:flex;
+    align-items: center;
+}
+/*mobile*/
+@media (max-width:480px){
+
+    body{
+        width:100%;
+        margin: 0 .25rem;
+        background:#ccc;
+        padding:.5rem 0;
+        line-height:1em;
+        font-size:1rem;
+        font-family: raleway,"helvetica neue";
+    }
+svg{
+    width:320px;
+    
+    }
+.tip-flag{
+    margin-left:.5rem;
+    padding-left:.5rem;
+}
+    .navbar-nav{
+        display:flex;
+        flex-direction: column;       
+        justify-content: space-evenly;
+        align-items: stretch;
+        align-content: stretch;
+        width:100%
+        
+        }
+        nav{
+            z-index: 10;
+            padding:.5rem;
+            height:auto;
+           
+         
+         }
+         .navbar-nav{
+         justify-content: flex-start;
+         align-items: stretch;
+         align-content: space-evenly;
+         
+         }
+         .nav-item{
+             height:50px;             
+         }
+         .nav-link{
+         font-size: 1.25rem;
+         color:#fff !important;         
+         margin:0 .5rem;
+         line-height: 1em;         
+         height:50px;
+         }
+        .header-text{
+             font-size:.15rem;
+             padding:.25rem;
+             text-align: left;
+         }
+         .suspense-p{
+            font-family:'raleway';
+            font-size: 1rem;
+            opacity:1;
+            padding:.5rem;
+            text-align:left !important;
+           
+        }
+        .card-flag{
+    max-width:100px;
+}
+.flag-btns{
+    display:flex;
+  flex-wrap: wrap;
+    align-items: center;
+}
+       
+}
+/*tablet*/
+@media (min-width:481px) and (max-width:768px){
+    svg{
+        width:600px;
+        margin:auto;
+        
+    }
+    nav{
+        z-index: 10;
+        padding:.5rem;
+        height:auto;
+       
+     
+     }
+     .navbar-nav{
+     justify-content: flex-start;
+     align-items: stretch;
+     align-content: space-evenly;
+     
+     }
+     .nav-item{
+         height:auto;
+         padding:.5rem;
+     }
+     .nav-link{
+     font-size: 1.5rem;
+     
+     margin:0 .5rem;
+     line-height: 1em;
+     
+     height:50px;
+     }
+    }

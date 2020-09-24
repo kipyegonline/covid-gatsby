@@ -1,99 +1,79 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+### VISUALIZING THE NOVEL CORONA VIRUS PANDEMIC CASES WITH REACT AND D3 
 
-## 🚀 Quick start
+> __ "Move fast and break things. Unless you are breaking stuff, you are not moving fast enough."__ -Mark Zuckerberg  
 
-1.  **Create a Gatsby site.**
+The project is available on netlify and [https://wwww.prhub.co.ke/covid19](https://wwww.prhub.co.ke/covid19)  
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+### Quick summary
+   This is an interactive app that visualizes the reported cases of the novel corona virus disease on svg. The covid-19was first  reported by the WHO on 31st December,2019.The visualisation starts from January 22nd 2020.The charts use linear and date scales to visualize the covid-19 pandemic.  
 
-1.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+   The application takes in JSON  data from a rest api and outputs them as visuals; bar charts,tables and line charts for purposes on conveying statistics to users in visuals they resonate with.
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+### Basic Usage
+This is an interactive app that visualizes data on svg using charts. The data can be further refined by hovering over a specific svg element displayed i,e hover over a circle or rectanges will show  more information on tool tip.
+The buttons and drop down select menus allows user to refine covi19 data based on the region they want to explore.More interactivity can be achived through the drop downs and the buttons besides the charts.  
 
-1.  **Open the source code and start editing!**
 
-    Your site is now running at `http://localhost:8000`!
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+   ## Architecture  
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-## 🧐 What's inside?
+   1. The app uses React js, a javascript UI  libarary, to render the UI components containing the visuals and the extra information including the tool tips and the tables.  
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+   2. I used d3 js (data driven documensts), a data visualisation library,  to create the charts logic; inbuilt algorithms,calculating axis and scales and redux for the management of data within the app.  
+   3.   Styled components provided the styling for the react components, css in js methodology.    
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+   ### REST API  
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+   I used the following apis and its associated endpoints to fetch the data using the browser fetch API.
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+   1. [wuhan corona virus](https://wuhan-coronavirus-api.laeyoung.endpoint.ainize.ai/jhu-edu/timeseries)
+   2. [Covid19 api](https://api.covid19api.com/)   
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
+   ........
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+#### Data
+The data is obtained from a REST API created by differentr developers. The data is provided and updated by  John Hopkins University school of public health.It is updated multiples time a day.  
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+#### Set Up 
+The app can be initialized on package.json by running the scripts object.Webpack is used as the module bundler for the porject and babel for transpiling the javascript code.  
+The code base is on the SRC folder, the js folder is where the react componmets and inline css are located.  
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+The app  module is bundled by webpack, App.js in src/js is the entry point of webpack and the dist folder is the build folder.
+* npm installl
+* npm start (dev server)
+* npm run build (outputs build on dist folfder)
+*  npm test
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+### dependencies
+The project  dependencies include: react js,redux,react redux, reactDOM styled.
+Webpack, eslint and babel are the dev dependencies for set up.
 
-## 🎓 Learning Gatsby
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
+### TESTS
+The tests can be  run on the terminal; npm test. All the test are available in one folder called tests inside the SRC folder.  
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+The units tests were managed by jest and enzyme to test the redux ,graph components and styled components. 
+.........
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+### DEPLOYMENT
 
-## 💫 Deploy
+Run 'npm install" then "npm run build" on the terminal to generate the build project which will be a dist folder.
+........
+#####  Copyright and  License
+MIT
+### REPOSITORY
+www.bitbucket.com/kipyegonline
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+### Contacts
+Get in touch on Twitter @kipyegonline
+Email: vince.kipyegon11@gmail.com

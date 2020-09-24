@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Events/> snapshot match 1`] = `
+<form
+  className="form p-5 mx-auto my-2 gray lighten-2"
+  onSubmit={[Function]}
+>
+  <h3>
+    My Form
+  </h3>
+  <h4>
+    Tenerife sea
+  </h4>
+  <p>
+    You just want attention
+  </p>
+  <ul
+    className="list-group"
+  >
+    <li
+      className="list-group-item"
+      key="1"
+    >
+      All you need to know
+       
+      <span
+        className="text-danger ml-5"
+        onClick={[Function]}
+      >
+        X
+      </span>
+    </li>
+    <li
+      className="list-group-item"
+      key="2"
+    >
+      I need your love
+       
+      <span
+        className="text-danger ml-5"
+        onClick={[Function]}
+      >
+        X
+      </span>
+    </li>
+    <li
+      className="list-group-item"
+      key="3"
+    >
+      Unit testing manenos
+       
+      <span
+        className="text-danger ml-5"
+        onClick={[Function]}
+      >
+        X
+      </span>
+    </li>
+  </ul>
+  <label>
+    Enter text
+  </label>
+  <textarea
+    className="form-control my-2"
+    onChange={[Function]}
+    value="Tenerife sea"
+  />
+  <input
+    className="btn blue lighten-2 clout"
+    type="submit"
+    value="Send Naah"
+  />
+</form>
+`;
+
+exports[`<MyForm> component Main Wrapper snapshots 1`] = `"<form class=\\"form p-5 mx-auto my-2 gray lighten-2\\"><h3></h3><h4></h4><p>You just want attention</p><ul class=\\"list-group\\"><li class=\\"list-group-item\\">All you need to know <span class=\\"text-danger ml-5\\">X</span></li><li class=\\"list-group-item\\">I need your love <span class=\\"text-danger ml-5\\">X</span></li><li class=\\"list-group-item\\">Unit testing manenos <span class=\\"text-danger ml-5\\">X</span></li></ul><label>Enter text</label><textarea class=\\"form-control my-2\\"></textarea><input type=\\"submit\\" class=\\"btn blue lighten-1\\" value=\\"Send Naah\\"/></form>"`;

@@ -5,3 +5,16 @@
  */
 
 // You can delete this file if you're not using it
+import "bootstrap"
+import "bootstrap/dist/css/bootstrap.min.css"
+import "jquery/dist/jquery.min.js"
+import "popper.js/dist/popper.min"
+//import "bootstrap/dist/js/bootstrap.min.js"
+import "typeface-raleway"
+import "typeface-roboto"
+import "materialize-css/sass/materialize.scss"
+
+import "./src/scss/main.scss"
+import "./src/css/main.css"
+
+export { default as wrapRootElement } from "./src/redux/store"

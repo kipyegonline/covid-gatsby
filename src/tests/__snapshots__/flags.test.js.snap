@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pagination/> matches snapshot 1`] = `
+<Fragment>
+  <hr
+    className="divider"
+  />
+  <p
+    className="text-center"
+  >
+    Page 
+    5
+     of 
+    10
+    .
+     
+  </p>
+  <styled.div>
+    <styled.div
+      className="page-icon"
+      handleClick={[Function]}
+      key="0"
+      style={
+        Object {
+          "background": "red",
+        }
+      }
+    >
+      1
+    </styled.div>
+    <styled.div
+      className="page-icon"
+      handleClick={[Function]}
+      key="1"
+      style={
+        Object {
+          "background": "red",
+        }
+      }
+    >
+      2
+    </styled.div>
+    <styled.div
+      className="page-icon"
+      handleClick={[Function]}
+      key="2"
+      style={
+        Object {
+          "background": "red",
+        }
+      }
+    >
+      3
+    </styled.div>
+    <styled.div
+      className="page-icon"
+      handleClick={[Function]}
+      key="3"
+      style={
+        Object {
+          "background": "red",
+        }
+      }
+    >
+      4
+    </styled.div>
+    <styled.div
+      className="page-icon"
+      handleClick={[Function]}
+      key="4"
+      style={
+        Object {
+          "background": "red",
+        }
+      }
+    >
+      5
+    </styled.div>
+    <styled.div
+      className="page-icon"
+      handleClick={[Function]}
+      key="5"
+      style={
+        Object {
+          "background": "gray",
+        }
+      }
+    >
+      6
+    </styled.div>
+    <styled.div
+      className="page-icon"
+      handleClick={[Function]}
+      key="6"
+      style={
+        Object {
+          "background": "gray",
+        }
+      }
+    >
+      7
+    </styled.div>
+    <styled.div
+      className="page-icon"
+      handleClick={[Function]}
+      key="7"
+      style={
+        Object {
+          "background": "gray",
+        }
+      }
+    >
+      8
+    </styled.div>
+    <styled.div
+      className="page-icon"
+      handleClick={[Function]}
+      key="8"
+      style={
+        Object {
+          "background": "gray",
+        }
+      }
+    >
+      9
+    </styled.div>
+    <styled.div
+      className="page-icon"
+      handleClick={[Function]}
+      key="9"
+      style={
+        Object {
+          "background": "gray",
+        }
+      }
+    >
+      10
+    </styled.div>
+  </styled.div>
+</Fragment>
+`;
